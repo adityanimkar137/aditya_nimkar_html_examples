@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title Card</title>
+    <style>
+        .card {
+            margin-left: 300px;
+            width: 250px;
+            height: 250px;
+            border: 2px solid red;
+           
+            padding: 20px;
+            transition: width 1s, height 1s, border-radius 1s;
+            overflow: auto;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        .card:hover {
+            width: 350px;
+            height: 400px;
+            border-radius: 50px;
+            background-color: #ffe5e5;
+        }
+
+        .gamer-tag {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d32f2f;
+            margin-bottom: 10px;
+        }
+
+        .languages {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="gamer-tag">Rex Forger</div>
+        <div class="languages">
+            <strong>Languages Learned:</strong>
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>Python</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

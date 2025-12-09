@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title></title>
+<style>
+div {
+    width: 200px;
+    height: 200px;
+    border: 4px solid black;
+    border-radius: 20px;
+    margin-left: 650px;
+    margin-top: 250px;
+
+    animation: boxColor 3s infinite;
+}
+
+
+@keyframes boxColor {
+    0%   { background-color: red; }
+    25%  { background-color: blue; }
+    50%  { background-color: yellow; }
+    75%  { background-color: green; }
+    100% { background-color: purple; }
+}
+
+
+div:hover {
+    animation: boxColor 3s infinite, rotateScale 2s linear infinite;
+}
+
+@keyframes rotateScale {
+    0%   { transform: rotate(0deg) scale(1); }
+    50%  { transform: rotate(180deg) scale(1.3); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
