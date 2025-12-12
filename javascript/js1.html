@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+</head>
+<body>
+	<button type="" id="show">Show</button>
+	<button type="" id="hide">Hide</button>
+	<button type="" id="showhide">Go</button>
+	<br><br><br><br>
+	<img src="Snorlax.webp" id="img">
+	<img src="006.png" id="fire" style="margin-left: 30%;">
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<script>
+$(document).ready(function()
+{
+	$("#hide").click(function(){
+		$("img").hide(1000)
+	})
+
+	$("#show").click(function(){
+		$("img").show(1000)
+	})
+
+	$("#showhide").click(function(){
+		$("img").toggle(1000)
+	})
+
+		$("#showhide").hover(function(){
+		$("img").slideToggle(1000)
+	})
+
+
+			$("#showhide").click(function(){
+		$("#fire").toggle(1000)
+	})
+
+		$("#showhide").hover(function(){
+		$("#fire").slideToggle(1000)
+	})
+})
+</script>
+
+</body>
+</html>
